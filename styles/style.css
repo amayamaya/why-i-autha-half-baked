@@ -3,10 +3,10 @@ body {
     /* feel free to update these css variables for a quick theme */
     
     --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color2: rgb(78, 52, 46);
+    --color3: rgb(255, 90, 0);
+    --color4: rgb(255, 174, 0);
+    --color5: rgb(230, 238, 156);
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: var(--color1);
 }
 
 main {
@@ -56,7 +56,7 @@ section {
 header {
     display: flex;
     justify-content:center;
-    background-color: var(--color3);
+    background-color: var(--color1);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -105,7 +105,20 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color1);
     box-shadow: var(--shadow);
     font-family: 'VT323', monospace;
 }
+
+/* input[type='text'] {
+    background-color: var(--color4);
+    color: var(--color2);
+    border: solid 2px var(--color5);
+    border-radius: 4px;
+}
+
+#sign-up-email input[type='text']:focus {
+    background-color: var(--color5);
+    color: var(--color2);
+    border-color: var(--color4);
+} */
