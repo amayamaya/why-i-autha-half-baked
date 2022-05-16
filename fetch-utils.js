@@ -21,4 +21,9 @@ export async function checkAuth() {}
 
 export async function redirectIfLoggedIn() {}
 
-export async function logout() {}
+// removes the token from local storage and redirects the user home
+export async function logout() {
+    await client.auth.signOut();
+
+    return window.location.href = '/';
+}
