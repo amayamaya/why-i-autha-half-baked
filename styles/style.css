@@ -1,15 +1,14 @@
-
 body {
     /* feel free to update these css variables for a quick theme */
-    
+
     --color1: white;
     --color2: rgb(78, 52, 46);
     --color3: rgb(255, 90, 0);
     --color4: rgb(255, 174, 0);
     --color5: rgb(230, 238, 156);
-    
+
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-        
+
     /* --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
@@ -21,12 +20,12 @@ body {
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
-    
+
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
+
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color1);
 }
@@ -55,18 +54,16 @@ section {
 
 header {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background-color: var(--color1);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
 
-
 h1 {
     font-size: 1.8rem;
     font-weight: bold;
     font-family: 'VT323', monospace;
-    
 }
 
 h3 {
@@ -97,7 +94,7 @@ p {
     margin: var(--gutter);
     font-family: 'VT323', monospace;
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -110,15 +107,42 @@ footer {
     font-family: 'VT323', monospace;
 }
 
-/* input[type='text'] {
+#sign-in-email:hover {
     background-color: var(--color4);
-    color: var(--color2);
-    border: solid 2px var(--color5);
-    border-radius: 4px;
+    border: none;
 }
 
-#sign-up-email input[type='text']:focus {
-    background-color: var(--color5);
-    color: var(--color2);
-    border-color: var(--color4);
-} */
+#sign-in-password:hover {
+    background-color: var(--color4);
+    border: none;
+}
+
+#sign-up-email:hover {
+    background-color: var(--color3);
+    border: none;
+}
+
+#sign-up-password:hover {
+    background-color: var(--color3);
+    border: none;
+}
+
+#sign-in-email {
+    background-color: var(--color3);
+    border: none;
+}
+
+#sign-in-password {
+    background-color: var(--color3);
+    border: none;
+}
+
+#sign-up-email {
+    background-color: var(--color4);
+    border: none;
+}
+
+#sign-up-password {
+    background-color: var(--color4);
+    border: none;
+}
