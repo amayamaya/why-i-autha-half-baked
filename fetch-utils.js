@@ -30,7 +30,11 @@ export function checkAuth() {
 
 
 // if not authorized send to home
-export async function redirectIfLoggedIn() {}
+export async function redirectIfLoggedIn() {
+    if (getUser()) {
+        location.replace('./other-page');
+    }
+}
 
 // removes the token from local storage and redirects the user home
 export async function logout() {
